@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service
 
 @Service
 class YetiPostService(private val yetiPostDao: YetiPostDao) {
-    fun addPost(post: YetiPost): Int {
-        return yetiPostDao.insertPost(post)
+    fun getPosts(): List<YetiPost> {
+        return yetiPostDao.getPosts()
     }
 }
