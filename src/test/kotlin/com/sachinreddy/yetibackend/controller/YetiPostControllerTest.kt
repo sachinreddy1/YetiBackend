@@ -52,6 +52,4 @@ internal class YetiPostControllerTest @Autowired constructor(
                     content { contentType(MediaType.APPLICATION_JSON) }
                 }
     }
-
-
 }
