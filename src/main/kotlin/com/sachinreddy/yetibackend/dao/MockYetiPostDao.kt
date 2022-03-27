@@ -7,7 +7,10 @@ import java.util.*
 @Repository
 class MockYetiPostDao: YetiPostDao {
     private val posts = mutableListOf(
-        YetiPost(UUID.randomUUID(), "sachinreddy", 3, "")
+        YetiPost(UUID.randomUUID(), "sachinreddy", 3, ""),
+        YetiPost(UUID.randomUUID(), "bilbobagins", 6, ""),
+        YetiPost(UUID.randomUUID(), "frodobagins", 2, ""),
+        YetiPost(UUID.randomUUID(), "dunkey", 12, "")
     )
 
     override fun getPosts(): List<YetiPost> {
